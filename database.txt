@@ -1,0 +1,50 @@
+#What do you understand By Database ?
+=>A database is information that is set up for easy access, management and updating. Computer databases typically
+    store aggregations of data records or files that contain information, such as sales transactions, customer data, financials
+    and product information.
+     
+#What do you mean Normalisation?
+=>Normalization is the process of organizing data in a database. It includes creating tables and establishing relationships 
+    between those tables according to rules designed both to protect the data and to make the database more flexible by
+    eliminating redundancy and inconsistent dependency
+
+# What is Difference between DBMS and RDBMS?
+=>DBMS stands for Database Management System, which is a software that allows users to create,manipulate and manage 
+    data in a database.,
+    RDBMS stands for Relational Database Management System which is a type of DBMS that stores data in tables and uses
+    SQL as a query language.
+     
+#What is MF Cod Rule of RDBMS Systems?
+=>Codd's rule in DBMS also known as Codd's 12 rules/commandments is a set of thirteen rules (numbered 0 to 12)
+    that define a database to be a correct Relational Database Management System (RDBMS). If a database follows
+    Codd's 12 rules, it is called a True relational database management system.
+
+#What do you understand By Data Redundancy? 
+=>Data redundancy means that the same pieces of data are kept in two or more places within a database or data storage system.
+
+#What is DDL Interpreter?
+=>DDL Interpreter is a component of a DBMS that translates the data definition language (DDL) statements into a set of tables,
+    views, indexes, and other database objects.
+
+#What is DML Compiler in SQL?
+=>DML Compiler DML expands to Data Manipulation Language in DBMS. DML Compiler again as the name suggests compiles
+    (or translates) the DML statements such as select, update and delete statements into low-level instructions which is nothing but 
+    the machine-readable object code to make it executable.
+
+#What is SQL Key Constraints writing an Example of SQL Key Constraints
+=>SQL Key Constraints are rules that enforce the uniqueness and referential integrity of the data in a database
+     Example: CREATE TABLE STUDENT ( ID int , Name varchar(255) , Age int, CHECK (Age>=18) ); 
+
+#What is save Point? How to create a save Point write a Query?
+=>Savepoint is a command in SQL that is used with the rollback command.
+    SAVEPOINT SAVEPOINT_NAME;
+     
+#What is trigger and how to create a Trigger in SQL?
+=>Trigger is a database object that is associated with a table and automatically executes a set of SQL statements when a specific 
+     event occurs on that table.
+     1) CREATE TRIGGER schema. trigger_name.
+     2) ON table_name.
+     3) AFTER {INSERT, UPDATE, DELETE}
+    4)  [NOT FOR REPLICATION]
+    5) AS.
+    6) {SQL_Statements}
